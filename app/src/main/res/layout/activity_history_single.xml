@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jamesalon.find_my_mechanic_app.HistorySingleActivity"
+    android:orientation="vertical"
+    android:layout_margin="20sp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/userimage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@mipmap/ic_user"
+        app:civ_border_width="2dp"
+        android:layout_marginBottom="20sp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:text="Name"
+        android:textSize="25sp"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userphone"
+        android:text="Phone Number"
+        android:textSize="25dp"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="Tme/Date"
+        android:textSize="20sp"
+        android:layout_margin="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
